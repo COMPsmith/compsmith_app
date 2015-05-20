@@ -10,7 +10,8 @@
  */
 angular
   .module('htmlApp', [
-    'ngRoute'
+    'ngRoute',
+    'ui.materialize'
   ])
 
   .config(function ($routeProvider) {
@@ -52,3 +53,8 @@ angular
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
+
+$('.button-collapse').sideNav({
+      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    }
+  );
